@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+body {
+  background-image: url(../images/pattern.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.btn {
+  box-shadow: 0em 0.2em 0.2em rgba(0, 0.25, 0, 0.25);
+}
+/**Header**/
+nav {
+  background-color: #252525;
+}
+.dropdown-menu {
+  background-color: #252525;
+}
+.caption-header {
+  background-color: #272121;
+  background-image: url(../images/bg_image_1.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  color: white;
+  padding-top: 270px;
+  padding-bottom: 270px;
+}
+.career {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.badge {
+  background-color: #ff0000;
+  opacity: 0.5;
+  filter: blur(6px);
+  border-radius: 15px;
+  padding: 10px;
+  height: 3rem;
+  width: 25rem;
+}
+.badge:empty {
+  display: unset;
+}
+.showcase {
+  position: absolute;
+}
+b {
+  color: #ff0000;
+}
+
+/**About**/
+.about {
+  padding-top: 5rem;
+}
+.text {
+  text-align: justify;
+}
+ul {
+  list-style: none;
+}
+.btn {
+  background-color: #ff0000;
+}
+
+.contact {
+  padding-top: 5rem;
+}
+
+.img-photo {
+  border-radius: 5%;
+  box-shadow: 0.4em 0.4em 0.4em rgba(0, 0.5, 0, 0.5);
+}
+
+/**Services**/
+.services {
+  padding-top: 5rem;
+}
+
+/**Projects**/
+.projects {
+  padding-top: 5rem;
+}
+
+.card-body {
+  box-shadow: 0em 0.4em 0.4em rgba(0, 0.25, 0, 0.25);
+}
+
+/**Img overlay**/
+/* Container needed to position the overlay. Adjust the width as needed */
+.recipt {
+  position: relative;
+  width: 100%;
+}
+
+/* Make the image to responsive */
+.image {
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #443737;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: 0.3s ease;
+}
+
+/* When you mouse over the container, the overlay text will "zoom" in display */
+.recipt:hover .overlay {
+  transform: scale(1);
+}
+
+/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+.page {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
